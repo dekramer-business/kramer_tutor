@@ -8289,6 +8289,36 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+/* .li-primary-before {
+  color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.li-secondary-before{
+  color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+} */
+
+ul.list-before-primary {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+ul.list-before-primary li::before {
+  content: "\2022"; /* Unicode character for a bullet point */
+  color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important; /* Specify the color for the bullets */
+  margin-right: 0.5em; /* Add some space between the bullet and the text */
+}
+
+ul.list-before-secondary {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+ul.list-before-secondary li::before {
+  content: "\2022"; /* Unicode character for a bullet point */
+  color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important; /* Specify the color for the bullets */
+  margin-right: 0.5em; /* Add some space between the bullet and the text */
+}
+
 .bg-success {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
